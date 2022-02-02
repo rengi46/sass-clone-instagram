@@ -1,0 +1,347 @@
+* {
+  font-family: Helvetica;
+}
+
+@media only screen and (min-width: 880px) {
+  .img {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .img {
+    display: none !important;
+  }
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 40px;
+  padding-top: 15px;
+}
+.content section {
+  height: 600px;
+  width: 418px;
+  margin: 10px 0px;
+}
+
+.img {
+  background-image: url("../img/mobil.png");
+}
+.img img {
+  position: relative;
+  top: 100px;
+  left: 36%;
+  transition-duration: 1s;
+}
+
+.inicioSesion {
+  margin: 32px auto;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid 1px #dadada;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  border-radius: none;
+}
+.inicioSesion img {
+  width: 175px;
+  margin: 15px 80px 30px;
+}
+.inicioSesion form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inicioSesion form input {
+  border: solid 1px #dadada;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  margin: 5px 20px;
+  width: 130%;
+}
+.inicioSesion form button {
+  border: solid 1px #dadada;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 7px;
+  margin-top: 7px;
+  width: 130%;
+  max-height: 30px;
+  background-color: #0095f6;
+  color: white;
+}
+.inicioSesion .separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #8e8e8e;
+  font-weight: bolder;
+  font-size: 0.75em;
+}
+.inicioSesion .separator .linear {
+  border-top: solid 1px #dfdfdf;
+  width: 100px;
+  margin: 0px 20px;
+}
+.inicioSesion > div {
+  margin: 13px 0px;
+}
+.inicioSesion > div a {
+  text-decoration: none;
+  font-size: 0.75em;
+  color: #00376b;
+}
+.inicioSesion .logFacebook a {
+  font-weight: bolder;
+  color: #3b5998 !important;
+  font-size: 0.9em;
+}
+
+.register {
+  border: solid 1px #dadada;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  border-radius: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 350px;
+  padding: 23px 0px;
+  margin: auto;
+  font-size: 0.85em;
+}
+.register a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #0095f6;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.8em;
+}
+.download .GetApp img {
+  height: 40px;
+  width: 134px;
+}
+
+footer {
+  height: 124px;
+  font-size: small;
+  color: #8e8e8e;
+}
+footer div {
+  width: 100%;
+  margin: 7px 0px;
+  text-align: center;
+}
+footer div a {
+  margin: 5px;
+}
+
+.info3 {
+  margin-top: 20px;
+}
+
+body {
+  background-color: #f7f7f7 !important;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: solid 1px #d6d6d6;
+  justify-content: space-around;
+}
+header .alineador {
+  padding-right: 30px;
+}
+header input {
+  height: 34px;
+  width: 230px;
+  border-radius: 10px;
+  border: none;
+  background-color: #eeeeee;
+}
+@media only screen and (min-width: 650px) {
+  header input {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 650px) {
+  header input {
+    display: none !important;
+  }
+}
+header .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 20px;
+}
+header .icons div {
+  margin: 10px 11px;
+}
+header .icons .user img {
+  width: 25px;
+  height: 25px;
+  border-radius: 200px;
+}
+
+.contentH {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contentH .historys {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 70px;
+}
+@media only screen and (min-width: 630px) {
+  .contentH .historys {
+    border: solid 1px #dadada;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    border-radius: none;
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .contentH .historys {
+    border-bottom: solid 1px #dadada;
+    width: 100%;
+  }
+}
+.contentH .historys .history {
+  padding: 10px 10px;
+}
+.contentH .historys .history img {
+  width: 56px;
+  height: 56px;
+  padding: 2px;
+  border: 2px solid orange;
+  border-radius: 200px;
+}
+.contentH .panel {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.contentH .panel .post {
+  background-color: white;
+  margin: 20px 0px;
+}
+@media only screen and (min-width: 630px) {
+  .contentH .panel .post {
+    border: solid 1px #dadada;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    border-radius: none;
+    width: 600px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .contentH .panel .post {
+    width: 100%;
+  }
+}
+.contentH .panel .post .cabeza {
+  border-bottom: solid 1px #dadada;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 1px;
+  justify-content: space-between;
+}
+.contentH .panel .post .cabeza .infouser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.contentH .panel .post .cabeza .infouser img {
+  margin: 5px 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 200px;
+}
+.contentH .panel .post .cabeza svg {
+  margin: 5px 15px;
+}
+.contentH .panel .post .imagen {
+  width: 100%;
+  margin: 0px auto;
+}
+.contentH .panel .post .imagen img {
+  height: 100%;
+  width: 99%;
+}
+.contentH .panel .post .iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contentH .panel .post .iconos svg {
+  margin: 10px;
+}
+.contentH .panel .post .likes p {
+  margin: 10px;
+}
+.contentH .panel .post .likes .viewComents {
+  font-size: 0.75em;
+  color: #c4c4c4;
+}
+.contentH .panel .post .comentarios {
+  border-top: solid 1px #dadada;
+  padding: 10px;
+}
+.contentH .panel .post .comentarios input {
+  border: none;
+  width: 80%;
+  height: 30px;
+}
+.contentH .panel .post .comentarios input:focus {
+  outline: none;
+}
+.contentH .panel .post .comentarios button {
+  cursor: pointer;
+  background-color: white;
+  font-weight: bolder;
+  color: #aaaaf1;
+  border: none;
+  width: 17%;
+  height: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

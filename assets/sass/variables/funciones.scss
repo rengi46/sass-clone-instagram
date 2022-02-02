@@ -15,3 +15,17 @@
     align-items: center;
     flex-direction: $direction;
 }
+@mixin media($width){
+    @media only screen and (min-width: $width) {
+            display: block !important;
+        }
+    @media only screen and (max-width: $width) {
+            display: none !important;
+    }
+}
+
+@mixin imguser(){
+    width: 25px;
+    height: 25px;
+    border-radius: 200px;
+}

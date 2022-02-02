@@ -36,6 +36,7 @@ $grisLetra: rgb(142, 142, 142);
         position: relative;
         top: 100px;
         left: 36%;
+        transition-duration: 1s;
     }
 }
 .inicioSesion{
@@ -97,6 +98,7 @@ $grisLetra: rgb(142, 142, 142);
     width: 350px;
     padding: 23px 0px;
     margin: auto;
+    font-size: 0.85em;
     a{
         text-decoration: none;
         font-weight: bolder;
