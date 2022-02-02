@@ -1,0 +1,132 @@
+@use "../variables/funciones.scss" as f;
+
+$azul : rgb(0, 149, 246);
+$grisLetra: rgb(142, 142, 142);
+
+*{
+    font-family: Helvetica;
+}
+
+@media only screen and (min-width: 880px) {
+    .img {
+        
+        display: block !important;
+     }
+    }
+@media only screen and (max-width: 880px) {
+    .img {
+        display: none !important;
+    }
+}
+.content{
+    
+    @include f.flex(row);
+    padding-bottom: 40px;
+    padding-top: 15px;
+    section{
+        height: 600px;
+        width: 418px;
+        margin: 10px 0px;
+    }
+}
+
+.img{
+    background-image: url("../img/mobil.png") ;
+    img{
+        position: relative;
+        top: 100px;
+        left: 36%;
+    }
+}
+.inicioSesion{
+    margin: 32px auto ;
+    max-width: 350px;
+    @include f.flex(column);
+    @include f.border(none);
+    img{
+        width: 175px;
+        margin: 15px 80px 30px;
+    }
+    form{
+        @include f.flex(column);
+        input{
+            @include f.border(5px);
+            margin: 5px 20px;
+            width: 130%;
+        }
+        button{
+            @include f.border(5px);
+            padding: 7px;
+            margin-top: 7px;
+            width: 130%;
+            max-height: 30px;
+            background-color: $azul;
+            color: white;
+        }
+    }
+    .separator{
+        @include f.flex(row);
+        color: $grisLetra;
+        font-weight: bolder;
+        font-size: 0.75em;
+        .linear{
+            border-top: solid 1px rgb(223, 223, 223);
+            width: 100px;
+            margin: 0px 20px
+        }
+    }
+    >div{
+        margin: 13px 0px;
+        a{
+            text-decoration: none;
+            font-size: 0.75em;
+            color: rgb(0, 55, 107);
+        }
+    }
+    .logFacebook{
+        a{
+            font-weight: bolder;
+            color: #3b5998 !important;
+            font-size: 0.9em;
+        }
+    }
+}
+.register{
+    @include f.border(none);
+    @include f.flex(row);
+    width: 350px;
+    padding: 23px 0px;
+    margin: auto;
+    a{
+        text-decoration: none;
+        font-weight: bolder;
+        color: $azul;
+    }
+}
+.download{
+    @include f.flex(column);
+    font-size: 0.8em;
+    .GetApp{
+
+        img{
+            @include f.normImg();
+        }
+    }
+}
+
+footer{
+    height: 124px;
+    font-size: small;
+    color: $grisLetra;
+    div{
+        width: 100%;
+        margin:7px 0px;
+        text-align: center;
+        a{
+            margin:5px;
+        }
+    }
+}
+.info3{
+    margin-top: 20px;
+}
